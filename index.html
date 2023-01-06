@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/milogo.png" alt="logo">
+            </div>
+            <div class="titulo">
+                <h1>Encriptador de texto</h1>
+            </div>
+        </header>
+        <main>
+            <div class="texto">
+                <div class="casilla">
+                    <textarea type="text" id="text" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="warning">
+                    <img src="img/vector.png" alt="Warning">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button onclick="encriptar()" class="azul" name="encriptar">Encriptar</button>
+                    <button onclick="desencriptar()" name="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+            <div class="display">
+                <div class="no_text">
+                    <div class="mensaje">
+                        <img src="img/search.png" alt="search">
+                        <h2>Ningún mensaje fue encontrado</h2><p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Creado por Kevin Julio M.</p>
+        </footer>   
+        
+        <script src="encriptar.js"></script>
+        <script src="copiar.js"></script>
+    </body>
+</html>

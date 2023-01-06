@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Puddles&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #F3F5FC; 
+    background: repeat url(img/lock.jpg);
+    color: #052051;
+    font-family: 'Andika', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    margin: 20px 40px;
+}
+
+h1{
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 3rem;
+}
+
+textarea{
+    border: none;
+    background-color: transparent;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 2rem; /*32px*/
+    height: 280px;
+    line-height: 150%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    resize: none;
+    text-transform: lowercase;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+main{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: #0A3871;
+    color: #fff;
+    padding: 0.625rem; /*10px*/
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+button.azul{
+    margin-right: 1.5rem; /*24px*/
+    background-color: #0A3871;
+    color: #fff;
+}
+
+button{
+    width: 300px;
+    min-width: 200px;
+    height: 4.2rem; /*67px*/
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px #0A3871 solid;
+    border-radius: 1.5rem; /*24px*/
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 16px #0A3871;
+    transition: all 0.2s ease;
+}
+
+.botones{
+    display: flex;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+}
+
+.casilla{
+    min-height: 300px;
+}
+
+.no_text{
+    height: 386px;
+    text-align: center; 
+}
+
+.parrafo{
+    color: #495057;
+    font-size: 1.5rem;
+    line-height: 150%;
+    margin: 1rem 1rem 0 1rem;
+    height: 315px;
+    text-align: left;
+}
+
+.display{
+    background-color: #fff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 32px;
+    width: 35%;
+}
+
+.display img{
+    margin-top: 2rem;
+    width: 15rem;
+}
+
+.display button{
+    width: 90%;
+}
+
+.texto{
+    width: 65%;
+    display: flow-root;
+    padding-right: 1rem;
+}
+
+.logo{
+    height: 48px;
+    width: 120px;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.mensaje{
+    text-align: center;
+    line-height: 150%;
+}
+
+.mensaje h2{
+    color: #343A40;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.mensaje p{
+    color: #495057;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.titulo{
+    margin: auto 0 auto 0;
+}
+
+.warning{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.warning img{
+    width: 1rem;
+    height: 1rem;
+    margin: auto .5rem;
+}
+
+.warning p{
+    font-size: 1rem;
+    color: #495057;
+}
+
+/*Tablet 768px*/
+@media only screen and (max-width: 768px){
+    
+    header,
+    main{
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .texto,
+    .display{
+        width: 100%;
+        padding: 0;
+    }
+
+    .display img{
+        display: none;
+    }
+
+    .display button{
+        margin-bottom: 1rem;
+        width: 95%;
+    }
+
+    .logo{
+        height: 30px;
+        width: 70px;
+    }
+
+    .no_text{
+        height: auto;
+    }
+
+    .parrafo{
+        margin-bottom: 2rem;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+
+    header{
+        margin: 16px;
+    }
+
+    h1{
+        font-size: 1.3rem;
+    }
+
+    main{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    button.azul{
+        margin-right: 0%;
+        margin-bottom: 1rem;
+    }
+
+    textarea{
+        font-size: 1.5rem;
+    }
+
+    .botones{
+        flex-wrap: wrap;
+    }
+
+    .display button{
+        width: 90%;
+    }
+
+    .logo{
+        height: 20px;
+        width: 60px;
+    }
+}
+
+
