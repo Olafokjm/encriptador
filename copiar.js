@@ -1,14 +1,3 @@
-window.onload(() =>{
-
-  const boton = document.querySelector('copiar');
-
-  if (texto == false){
-    boton.style.display = none;
-  } else {
-    espacio.innerHTML = boton;
-  }
-});
-
 function copy_text(){
 
     const contenido = document.querySelector('.parrafo');
